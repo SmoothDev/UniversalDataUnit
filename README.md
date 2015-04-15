@@ -8,6 +8,8 @@ var
   LIniObject : TIniObject;
 begin
   LIniObject := TIniObject.Create;
-  LIniObject.LoadFromFile('./config.ini);
+  LIniObject.LoadFromFile('./config.ini');
+  
+  ShowMessage(LIniObject['sector']['property']);
 end;
 ```
